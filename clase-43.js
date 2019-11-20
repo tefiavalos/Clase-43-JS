@@ -62,7 +62,8 @@ const alumnasOnline = [
         
         if (alumnasOnline[i][j] === usuarioABorrar) {
           alumnasOnline.splice(i, 1);
-          alert("Hemos borrado al usuario identificado como" + usuarioABorrar)
+          alert("Hemos borrado al usuario identificado como" + usuarioABorrar);
+          break;
         }
         
       }
