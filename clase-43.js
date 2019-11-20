@@ -84,18 +84,20 @@ const alumnasOnline = [
     }
   }
   
-  /*if (accion === "AGREGAR") {
-    let usuarioAAgregar = prompt("Indique que dato desea agregar")
+  if (accion === "AGREGAR") {
+    let nombreUsuario = prompt("Indique nombre")
+    let apellidoUsuario = prompt("Indique apellido")
+    let edadUsuario = prompt("Indique edad")
+    const alumnaAAgregar = [nombreUsuario, apellidoUsuario, edadUsuario]
   
     for (let i = 0; i < alumnasOnline.length; i++) {
-      for (let j = 0; j < alumnasOnline[i].length; j++) {
+      
         
-        if (alumnasOnline[i][j] === usuarioAAgregar) {
-          let datoAModificar = prompt("Por cual dato queres modificarlo?")
-          alumnasOnline[i][j] = datoAModificar;
-        }
+        if (alumnasOnline =! usuarioAAgregar) {
+          alumnasOnline.push(alumnaAAgregar)
+        
       }
     }
   }
   
-  console.log(alumnasOnline)*/
+  console.log(alumnasOnline)
