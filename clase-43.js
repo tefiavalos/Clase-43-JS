@@ -52,9 +52,9 @@ const alumnasOnline = [
   
   // alta baja modificacion 
   
-  let accion = prompt("Por favor, indique que accion desea tomar");
+  let accion2 = prompt("Por favor, indique que accion desea tomar");
   
-  if (accion === "BORRAR") {
+  if (accion2 === "BORRAR") {
     let usuarioABorrar = prompt("Indique que usuario desea borrar")
    
     for (let i = 0; i < alumnasOnline.length; i++) {
@@ -70,7 +70,7 @@ const alumnasOnline = [
     console.log(alumnasOnline)
   };
   
-  if (accion === "EDITAR") {
+  if (accion2 === "EDITAR") {
     let usuarioAEditar = prompt("Indique que dato desea editar")
   
     for (let i = 0; i < alumnasOnline.length; i++) {
@@ -84,20 +84,14 @@ const alumnasOnline = [
     }
   }
   
-  if (accion === "AGREGAR") {
+  if (accion2 === "AGREGAR") {
     let nombreUsuario = prompt("Indique nombre")
     let apellidoUsuario = prompt("Indique apellido")
     let edadUsuario = prompt("Indique edad")
-    const alumnaAAgregar = [nombreUsuario, apellidoUsuario, edadUsuario]
-  
-    for (let i = 0; i < alumnasOnline.length; i++) {
+    let alumnaAAgregar = [nombreUsuario, apellidoUsuario, edadUsuario]
+
+          alumnasOnline.push(alumnaAAgregar);
       
-        
-        if (alumnasOnline =! usuarioAAgregar) {
-          alumnasOnline.push(alumnaAAgregar)
-        
-      }
-    }
   }
   
   console.log(alumnasOnline)
